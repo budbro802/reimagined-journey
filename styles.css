@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+}
+
+.outer-body-wrapper {
+  @media screen and (min-width: 800px) {
+    background-color: hsl(330, 100%, 98%);
+    margin-top: 0px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.inner-body-wrapper {
+  @media screen and (min-width: 800px) {
+    width: 45%;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding: 30px 30px 30px 30px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+  }
+}
+
+.inner-wrapper {
+  width: 89%;
+  @media screen and (min-width: 800px) {
+    width: 100%;
+  }
+  margin: 0 auto;
+  padding: 10px 0 10px 0;
+}
+
+h1 {
+  font-family: "Young Serif", serif;
+  color: hsl(24, 5%, 18%);
+}
+
+h2 {
+  /* font-family: "Outfit", sans-serif; */
+  font-family: "Young Serif", serif;
+  color: hsl(14, 45%, 36%);
+}
+
+h3 {
+  font-family: "Outfit", sans-serif;
+  color: hsl(332, 51%, 32%);
+  margin-top: 15px;
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+  font-size: 1em;
+  color: hsl(24, 5%, 18%);
+}
+
+ol {
+  font-family: "Outfit", sans-serif;
+  font-size: 1em;
+  margin-bottom: 24px;
+}
+
+ul {
+  font-family: "Outfit", sans-serif;
+  font-size: 1em;
+  margin-bottom: 24px;
+}
+
+header {
+  img {
+    width: 100%;
+    @media screen and (min-width: 800px) {
+      border-radius: 20px;
+    }
+  }
+}
+
+.section-container {
+  border-bottom: hsl(30, 18%, 87%) 1px solid;
+}
+
+.intro-text {
+  font-weight: 600;
+
+  @media screen and (min-width: 800px) {
+    font-weight: 400;
+  }
+}
+
+.prep-time {
+  .prep-time-inner {
+    background-color: hsl(330, 100%, 98%);
+    font-weight: 400;
+    padding: 2px 20px 10px 20px;
+    border-radius: 15px;
+
+    ul {
+      padding-left: 20px;
+      width: 75%;
+    }
+
+    li {
+      padding-left: 15px;
+      line-height: 22px;
+      margin-bottom: 10px;
+    }
+
+    li::marker {
+      font-size: 0.75em;
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.ingredients {
+  ul {
+    padding-left: 20px;
+    line-height: 30px;
+  }
+
+  li {
+    padding-left: 15px;
+  }
+
+  li::marker {
+    font-size: 0.75em;
+  }
+}
+
+.intructions {
+  ol {
+    padding-left: 20px;
+  }
+
+  li {
+    padding-left: 15px;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  li::marker {
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+  }
+}
+
+.nutrition {
+  .fact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: hsl(30, 18%, 87%) 1px solid;
+    padding: 20px 20px;
+    font-family: "Outfit", sans-serif;
+
+    span {
+      color: hsl(332, 51%, 32%);
+      font-weight: 700;
+    }
+  }
+
+  .fact-container:nth-last-child(1) {
+    border: none;
+  }
+}
